@@ -19,6 +19,8 @@ Setup in 3 steps:
 2. Run `./changelog.sh` to write `CHANGELOG.md`, or pass a path such as `./changelog.sh docs/CHANGELOG.md`.
 3. Review the generated `Added`, `Fixed`, `Changed`, and `Removed` sections before committing.
 
+Optional validation: run `./test_changelog.sh` to create a temporary tagged git repository and verify the generated sections.
+
 The script reads commits since the latest git tag. If the repository has no tags, it uses the full commit history. See `examples/SAMPLE_CHANGELOG.md` for sample output generated from a real repository.
 
 ---
